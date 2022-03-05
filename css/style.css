@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 14px;
+}
+h1 {
+  vertical-align: middle;
+}
+header {
+  background-color: brown;
+  height: 3em;
+  color: whitesmoke;
+  font-size: 2vh;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+section {
+  margin: 2em 0;
+  overflow: hidden;
+}
+
+section h2 {
+  font-size: 3em;
+  display: block;
+  padding-bottom: 0.5em;
+  border-bottom: 1px solid grey;
+  margin-bottom: 0.5em;
+  text-align: center;
+}
+table {
+  margin-bottom: 0.5em;
+  table-layout: fixed;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0.5em;
+  border: 1px solid grey;
+  text-align: center;
+  margin: 0;
+}
+th {
+  font-weight: bold;
+  background-color: lightgrey;
+}

@@ -86,3 +86,8 @@ button {
 button:hover {
   color: coral;
 }
+
+.invalid-patient {
+  color: red;
+  font-weight: bold;
+}

@@ -5,6 +5,7 @@ BMIcalc = (weight,height) => {
   let BMI = weight / height / height * 10000
   return BMI.toFixed(2)
 }
+
 //Add patient================================
 getPatient = (form) => {
   let patient = {
@@ -48,6 +49,16 @@ add = (event) => {
 }
 addButton.addEventListener('click', add)
 //===========================================
+//remove patient ============
+removePatient = (event) => {
+  event.target.parentNode.classList.add('remove')
+}
+let removePatientButton = document.querySelectorAll('.remove-button')
+for (let i = 0; i < removePatientButton.length; i++) {
+  removePatientButton[i].addEventListener('click', removePatient)
+  
+}
+//==============================
 //Insert BMI into the table================
 for (let i = 0; i < patients.length; i++) {
   let patient = patients[i];
@@ -72,14 +83,5 @@ for (let i = 0; i < patients.length; i++) {
   }
 }
 
-//remove patient ============
-removePatient = (event) => {
-  event.target.parentNode.classList.add('remove')
-}
-let removePatientButton = document.querySelectorAll('.remove-button')
-for (let i = 0; i < removePatientButton.length; i++) {
-  removePatientButton[i].addEventListener('click', removePatient)
-  
-}
 
 

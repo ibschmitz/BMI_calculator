@@ -91,3 +91,15 @@ button:hover {
   color: red;
   font-weight: bold;
 }
+
+.remove {
+  opacity: 0;
+}
+
+.remove-button {
+  cursor: pointer;
+  background-color: red;
+  border-color: white;
+  color: white;
+  font-weight: bold;
+}

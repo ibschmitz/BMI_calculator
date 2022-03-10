@@ -28,6 +28,8 @@ buildTr = (patient) => {
   patientTr.appendChild(buildTd(patient.weight, 'info-weight'))
   patientTr.appendChild(buildTd(patient.height, 'info-height'))
   patientTr.appendChild(buildTd(patient.BMI, 'info-BMI'))
+  patientTr.appendChild(buildTd('Remove', 'remove-button'))
+  console.log(patientTr)
   return patientTr
 }
 addPatient = (patient) => {
@@ -69,3 +71,15 @@ for (let i = 0; i < patients.length; i++) {
     tdBMI.textContent = BMI
   }
 }
+
+//remove patient ============
+removePatient = (event) => {
+  event.target.parentNode.classList.add('remove')
+}
+let removePatientButton = document.querySelectorAll('.remove-button')
+for (let i = 0; i < removePatientButton.length; i++) {
+  removePatientButton[i].addEventListener('click', removePatient)
+  
+}
+
+
